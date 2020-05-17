@@ -1,8 +1,8 @@
 package main
 
 import (
-	"shApiProxy/conf"
-	"shApiProxy/server"
+	"shProxy/conf"
+	"shProxy/server"
 )
 
 func main() {

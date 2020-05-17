@@ -1,6 +1,6 @@
 package serializer
 
-import "shApiProxy/model"
+import "shProxy/model"
 
 // User 用户序列化器
 type User struct {

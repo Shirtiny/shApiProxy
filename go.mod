@@ -1,4 +1,4 @@
-module shApiProxy
+module shProxy
 
 go 1.12
 

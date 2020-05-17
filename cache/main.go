@@ -2,7 +2,7 @@ package cache
 
 import (
 	"os"
-	"shApiProxy/util"
+	"shProxy/util"
 	"strconv"
 
 	"github.com/go-redis/redis"

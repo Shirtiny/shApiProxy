@@ -1,7 +1,7 @@
 package model
 
 import (
-	"shApiProxy/util"
+	"shProxy/util"
 	"time"
 
 	"github.com/jinzhu/gorm"

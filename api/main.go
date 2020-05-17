@@ -3,9 +3,9 @@ package api
 import (
 	"encoding/json"
 	"fmt"
-	"shApiProxy/conf"
-	"shApiProxy/model"
-	"shApiProxy/serializer"
+	"shProxy/conf"
+	"shProxy/model"
+	"shProxy/serializer"
 
 	"github.com/gin-gonic/gin"
 	validator "gopkg.in/go-playground/validator.v8"

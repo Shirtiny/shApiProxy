@@ -2,9 +2,9 @@ package conf
 
 import (
 	"os"
-	// "shApiProxy/cache"
-	// "shApiProxy/model"
-	"shApiProxy/util"
+	// "shProxy/cache"
+	// "shProxy/model"
+	"shProxy/util"
 
 	"github.com/joho/godotenv"
 )

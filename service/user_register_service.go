@@ -1,8 +1,8 @@
 package service
 
 import (
-	"shApiProxy/model"
-	"shApiProxy/serializer"
+	"shProxy/model"
+	"shProxy/serializer"
 )
 
 // UserRegisterService 管理用户注册服务

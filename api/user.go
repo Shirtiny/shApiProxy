@@ -1,8 +1,8 @@
 package api
 
 import (
-	"shApiProxy/serializer"
-	"shApiProxy/service"
+	"shProxy/serializer"
+	"shProxy/service"
 
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"

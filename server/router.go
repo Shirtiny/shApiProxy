@@ -2,8 +2,8 @@ package server
 
 import (
 	"os"
-	"shApiProxy/api"
-	"shApiProxy/middleware"
+	"shProxy/api"
+	"shProxy/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -18,11 +18,13 @@ func NewRouter() *gin.Engine {
 	r.Use(middleware.CurrentUser())
 
 	// 路由
+
+	//api vesion 1
 	v1 := r.Group("/api/v1")
 	{
 		v1.POST("ping", api.Ping)
 
-		// 用户登录
+		// 用户注册
 		v1.POST("user/register", api.UserRegister)
 
 		// 用户登录
@@ -37,5 +39,13 @@ func NewRouter() *gin.Engine {
 			auth.DELETE("user/logout", api.UserLogout)
 		}
 	}
+
+	//shProxyApi version 1
+	v2 := r.Group("/shProxyApi/v1")
+
+	{
+		v2.GET("ping", api.Ping)
+	}
+
 	return r
 }
