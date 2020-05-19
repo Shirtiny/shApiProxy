@@ -65,7 +65,7 @@ func GetProxy(c *gin.Context) {
 		return
 	}
 	url := string(urlBytes)
-	log.Println("接收到的url", base64Url, "\n去除空格", strings.TrimSpace(base64Url), "\n解码后", url)
+	log.Println("接收到的url", base64Url, "\n解码后", url)
 	//建立请求
 	request, reqErr := http.NewRequest(http.MethodGet, url, nil)
 	if reqErr != nil {
