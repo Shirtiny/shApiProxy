@@ -45,6 +45,8 @@ func NewRouter() *gin.Engine {
 
 	{
 		v2.GET("ping", api.MyPing)
+		v2.GET("test", api.TestProxy)
+		v2.GET("get", api.GetProxy)
 	}
 
 	return r
