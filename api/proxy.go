@@ -50,6 +50,13 @@ func TestProxy(c *gin.Context) {
 func GetProxy(c *gin.Context) {
 	//读取参数
 	base64Url := c.Query("url")
+	if strings.TrimSpace(base64Url) == "" {
+		c.JSON(http.StatusBadRequest, serializer.Response{
+			Code: 400,
+			Msg:  "url参数不能为空",
+		})
+		return
+	}
 	//解码
 	urlBytes, decodeErr := base64.URLEncoding.DecodeString(base64Url)
 	if decodeErr != nil {
