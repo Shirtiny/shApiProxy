@@ -50,7 +50,6 @@ func TestProxy(c *gin.Context) {
 func GetProxy(c *gin.Context) {
 	//读取参数
 	base64Url := c.Query("url")
-	base64Url = base64.URLEncoding.EncodeToString([]byte("http://api.fanyi.baidu.com/api/trans/vip/translate?appid=20180619000178085&salt=111&sign=e79718826032fea0308cd3f3b5c2ee8e&from=auto&to=en&q=%E7%99%BE%E5%BA%A6%E7%BF%BB%E8%AF%91"))
 	//解码
 	urlBytes, decodeErr := base64.URLEncoding.DecodeString(base64Url)
 	if decodeErr != nil {
