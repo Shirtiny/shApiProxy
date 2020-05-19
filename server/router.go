@@ -44,7 +44,7 @@ func NewRouter() *gin.Engine {
 	v2 := r.Group("/shProxyApi/v1")
 
 	{
-		v2.GET("ping", api.Ping)
+		v2.GET("ping", api.MyPing)
 	}
 
 	return r
